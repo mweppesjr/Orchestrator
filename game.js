@@ -73,9 +73,17 @@ The recorder clicks. A distorted voice fills the room.
         if (gameState.roomsCleared >= config.roomsToEscape) {
             return escapeScene;
         }
-        // Pick a random room template and execute it to get the scene object
-        const randomIndex = Math.floor(Math.random() * roomTemplates.length);
-        return roomTemplates[randomIndex]();
+
+        // Present scenes in the order they are defined in the array.
+        // The 'roomsCleared' count is used as an index for the next scene.
+        if (gameState.roomsCleared < roomTemplates.length) {
+            const nextSceneIndex = gameState.roomsCleared;
+            return roomTemplates[nextSceneIndex]();
+        } else {
+            // If we've run out of unique rooms but haven't reached the escape number,
+            // we can either end the game or, for this fix, just show the escape scene early.
+            return escapeScene;
+        }
     }
 
     function renderScene(scene) {
