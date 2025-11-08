@@ -1,0 +1,78 @@
+body {
+    background-color: #0a0a0a;
+    color: #c0c0c0;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#game-container {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid #333;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
+}
+
+#story-text {
+    margin-bottom: 30px;
+    line-height: 1.6;
+    font-size: 1.1em;
+    white-space: pre-wrap; /* Preserves formatting from the JS story text */
+}
+
+#choices-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.choice-button {
+    background-color: transparent;
+    border: 1px solid #555;
+    color: #c0c0c0;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.choice-button:hover {
+    background-color: #c00;
+    color: #fff;
+    border-color: #c00;
+}
+
+#command-container {
+    margin-top: 30px;
+    display: flex;
+}
+
+#command-input {
+    flex-grow: 1;
+    background-color: #1a1a1a;
+    border: 1px solid #444;
+    color: #c0c0c0;
+    padding: 10px;
+    font-family: inherit;
+}
+
+#command-button {
+    background-color: #333;
+    border: 1px solid #555;
+    color: #c0c0c0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#command-button:hover {
+    background-color: #c00;
+    color: #fff;
+}
