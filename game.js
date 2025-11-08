@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const startScene = {
         text: `You wake up on a cold, tiled floor. Your cheek is pressed against something sticky, and the air smells faintly of bleach and rust.\n\nWhen you try to sit up, a tug at your ankles stops you short. A chain clinks somewhere behind you, disappearing into the darkness. A small light blinks on across the room, illuminating a simple metal chair with a tape recorder sitting on the seat.\n\nThe recorder clicks. A distorted voice fills the room.\n“You’ve spent years pretending your mistakes didn’t hurt anyone. Tonight, we find out how honest you’re willing to be.”`,
-        image: 'https://placehold.co/800x400/1a1a1a/c0c0c0?text=The+First+Room',
+        image: 'images/start_room.svg',
         choices: [
             { text: 'Crawl toward the chair.', outcome: 'progress' },
             { text: 'Feel along the wall for a door.', outcome: 'progress' },
