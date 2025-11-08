@@ -19,6 +19,18 @@ body {
     box-shadow: 0 0 15px rgba(255, 0, 0, 0.1);
 }
 
+#image-container {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+}
+
+#scene-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 #story-text {
     margin-bottom: 30px;
     line-height: 1.6;
